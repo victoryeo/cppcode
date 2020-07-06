@@ -4,6 +4,7 @@ node ('master') {
          // Get some code from our Git repository
          git 'https://github.com/victoryeo/cppcode/'
      }
+    stages {
      stage('Build') {
         steps {
             sh 'make'
@@ -14,4 +15,5 @@ node ('master') {
             echo "Test"
         }
      }
+    }
 }
