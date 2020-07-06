@@ -9,5 +9,6 @@ node ('master') {
      }
      stage('Test') {
             echo "Test"
+            sh './quotient'
      }
 }
