@@ -6,13 +6,18 @@ CC = g++
 #  -Wall turns on most, but not all, compiler warnings
 CFLAGS  = -g -Wall
 
+TARGET1 = quotient
+TARGET2 = mystrcpy
+
 # the build target executable:
-TARGET = quotient
+TARGET = $(TARGET1) $(TARGET2)
 
 all: $(TARGET)
 
-$(TARGET): $(TARGET).cpp
-	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cpp
+$(TARGET1): $(TARGET1).cpp
+	$(CC) $(CFLAGS) -o $(TARGET1) $(TARGET1).cpp
+$(TARGET2): $(TARGET2).cpp
+	$(CC) $(CFLAGS) -o $(TARGET2) $(TARGET2).cpp
 
 clean:
 	$(RM) $(TARGET)
