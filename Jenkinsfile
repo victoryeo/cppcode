@@ -1,4 +1,4 @@
-// Scripted Pipeline
+// Declarative Pipeline
 pipeline  {
    agent any
    stages {
