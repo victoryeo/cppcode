@@ -1,0 +1,1 @@
+This repo is used to demonstrate how a github repo works with Jenkins ci/cd pipeline.
